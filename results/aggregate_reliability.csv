@@ -1,0 +1,4 @@
+construct,n_all,n_yes_no,raw_agreement,raw_ci_low,raw_ci_high,cohen_kappa,kappa_ci_low,kappa_ci_high,pabak,pabak_ci_low,pabak_ci_high
+acceptability,210,210,0.914,0.876,0.948,0.072,-0.042,0.274,0.829,0.752,0.905
+pragmatic_appropriateness,210,209,0.871,0.828,0.919,0.37,0.18,0.55,0.751,0.656,0.837
+counterfactual_appropriateness,40,40,0.8,0.675,0.925,0.578,0.293,0.8,0.6,0.3,0.85

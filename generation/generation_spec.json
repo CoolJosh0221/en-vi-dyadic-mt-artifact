@@ -1,0 +1,54 @@
+{
+  "generation_date_utc": "2026-07-20",
+  "request_archive": {
+    "interrupted_without_terminal_artifact": 1,
+    "selected_outputs": 210,
+    "terminal_errors": 30,
+    "total_requests": 241
+  },
+  "runner": {
+    "attempt_overrides": "not recorded",
+    "automatic_sdk_client_retries": false,
+    "default_max_attempts": 5,
+    "delay_policy": "exponential",
+    "exact_invocation_commands": "not recorded",
+    "invalid_generation_handling": "rejected rather than repaired",
+    "selected_text_handling": "provider text retained verbatim; no manual edits",
+    "selection_policy": "first fully validated output",
+    "validated_output_reuse_on_rerun": true
+  },
+  "selected_output_records": 210,
+  "systems": {
+    "Gemini": {
+      "api": "v1beta generateContent",
+      "catalog_version": "3.5-flash-05-2026",
+      "immutable_checkpoint_digest": null,
+      "max_output_tokens": 1024,
+      "model_identifier": "gemini-3.5-flash",
+      "provider_default_fields": "not recorded",
+      "temperature": 0
+    },
+    "Google Translate": {
+      "backend_model_version": "not exposed",
+      "client": "googletrans 4.0.2",
+      "decoding_controls": "not exposed",
+      "endpoint": "translate.googleapis.com",
+      "source_language": "en",
+      "target_language": "vi"
+    },
+    "SEA-LION": {
+      "generation_time_digest": "not recorded",
+      "model_tag": "aisingapore/Qwen-SEA-LION-v4-32B-IT:latest",
+      "num_ctx": 4096,
+      "num_predict": 1024,
+      "ollama_server_build": "not recorded",
+      "post_hoc_registry_description": "GGUF; Qwen3; 32.8B; Q4_K_M",
+      "post_hoc_registry_lookup_date": "2026-07-29",
+      "post_hoc_warning": "The later lookup does not identify the generation-time checkpoint.",
+      "runtime": "Ollama",
+      "seed": 42,
+      "stream": false,
+      "temperature": 0
+    }
+  }
+}

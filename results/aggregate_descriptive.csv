@@ -1,0 +1,8 @@
+system,condition,acceptable_yes,acceptable_n,appropriate_yes,appropriate_n
+Gemini,BASE,30,30,28,30
+Gemini,DYAD,30,30,30,30
+Gemini,SWAPPED,30,30,30,30
+SEA-LION,BASE,27,30,25,29
+SEA-LION,DYAD,29,30,27,30
+SEA-LION,SWAPPED,25,30,25,30
+Google Translate,BASE,22,30,25,29
