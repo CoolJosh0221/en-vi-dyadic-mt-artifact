@@ -1,6 +1,10 @@
 {
   "generation_date_utc": "2026-07-20",
+  "labeled_output_inventory": "data/output_inventory.jsonl",
+  "prompt_templates": "generation/prompt_templates.md",
+  "rendered_requests": "generation/rendered_requests.jsonl",
   "request_archive": {
+    "attempt_log": "generation/attempt_log.csv",
     "interrupted_without_terminal_artifact": 1,
     "selected_outputs": 210,
     "terminal_errors": 30,

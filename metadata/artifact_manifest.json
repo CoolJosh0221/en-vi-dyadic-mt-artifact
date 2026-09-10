@@ -1,19 +1,24 @@
 {
   "artifact_title": "Research artifact for Evaluating Pragmatic Appropriateness in English-Vietnamese Machine Translation with Dyadic Profiles (WMT 2026)",
   "counts": {
+    "generation_attempts_archived": 241,
     "hidden_repeat_presentations_in_forms": 15,
+    "labeled_output_records": 210,
     "main_form_presentations_used_for_extraction": 225,
     "released_distinct_source_translation_context_records": 199,
+    "rendered_requests": 210,
     "reported_selected_output_records": 210,
     "selected_record_collisions_under_released_fields": 11,
     "source_requests": 30
   },
   "included": [
     "selected English source text and synthetic intended profiles",
+    "labeled 210-row output inventory (source, system, condition, verbatim translation)",
     "distinct generated Vietnamese text with displayed synthetic context",
-    "generation parameters and execution metadata available in the manuscript record",
+    "verbatim rendered provider requests, prompt templates, and the attempt archive log",
+    "generation parameters and execution metadata",
     "published aggregate and pseudonymous rater-specific summary tables",
-    "aggregate exact-test verification code"
+    "inventory, prompt-template, and aggregate exact-test verification code"
   ],
   "item_level_human_data_included": false,
   "operational_identifiers_removed": true,
@@ -21,8 +26,6 @@
   "release_scope": "non-participant materials plus published aggregate and pseudonymous rater-specific summary results",
   "schedule_order_removed": true,
   "unavailable_in_release_workspace": [
-    "exact 210-row system/condition/output linkage map",
-    "verbatim prompt templates and rendered request JSON",
     "full frozen item-level analysis scripts and inputs",
     "intermediate source candidate pool and source record keys/spans/checksums"
   ],
@@ -30,6 +33,7 @@
     "item-level annotator responses and free-text reasons",
     "adjudication cases and rationales",
     "timestamps, schedules, package codes, and linkage identifiers",
-    "agreements, payment records, and private audit material"
+    "agreements, payment records, and private audit material",
+    "provider response payloads (contain opaque provider signatures) and per-record operational identifiers"
   ]
 }

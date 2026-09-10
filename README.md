@@ -12,30 +12,37 @@ This item-level-response-free artifact accompanies the paper.
   source--Vietnamese-translation--displayed-context combinations recovered
   from the executed forms. Together these contain the textual content observed
   across all 210 selected generated-output records.
+- `data/output_inventory.jsonl`: the labeled 210-row inventory (see below).
 - `generation/generation_spec.json`: recorded systems, dates, parameters,
   retry policy, validation, and known missing execution fields.
-- `generation/prompt_structure.md`: records-backed message-role and condition
-  structure. This is not a substitute for the unavailable verbatim templates.
+- `generation/rendered_requests.jsonl`, `generation/prompt_templates.md`,
+  `generation/attempt_log.csv`: verbatim requests, templates, and attempt counts.
 - `results/*.csv`: machine-readable aggregate and pseudonymous rater-specific
   summary tables reported in the paper.
-- `analysis/verify_aggregates.py`: standard-library-only checks for inventory
-  counts and the exact RQ1, RQ2, and post-hoc tests recoverable from aggregate
+- `analysis/verify_aggregates.py`: standard-library-only checks for the labeled
+  inventory, prompt templates, the text-identity counts reported in Section 6.4,
+  and the exact RQ1, RQ2, and post-hoc tests recoverable from aggregate
   sufficient statistics.
 - `metadata/artifact_manifest.json`, `metadata/privacy_scan.json`, and
   `MANIFEST.sha256`: scope, privacy, and integrity records.
 
-## Important output-table limitation
+## Labeled output inventory
 
-The executed forms contained 225 displayed main-task rows: 210 selected
-generated outputs plus 15 hidden repeats. After removing all operational IDs,
-schedule order, and exact duplicate content, 199 distinct
-source/translation/context combinations remain. Eleven of the 210 selected
-records share the same released fields as another selected record. The private
-system/condition/output linkage map needed to expand those collisions into an
-exact labeled 210-row table was not present in the release workspace, so this
-artifact does not infer it. Consequently, this release supports inspection of
-all distinct output text but not system-by-condition reconstruction at the
-item level.
+`data/output_inventory.jsonl` lists all 210 generated records with `release_source_id`
+(`S01`–`S30`), `system` (Gemini, SEA-LION, Google Translate), `condition` (BASE, DYAD,
+SWAPPED), the verbatim Vietnamese translation and its SHA-256, and
+`release_text_record_id`, which joins each record to the 199
+distinct source/translation/context rows in `data/distinct_output_texts.jsonl`
+(eleven records share a row with another record because their released fields
+coincide). `generation/rendered_requests.jsonl` holds the 210 provider request
+bodies verbatim; `generation/prompt_templates.md` states the templates and
+`generation/attempt_log.csv` the 241-request attempt archive (210 selected, 30
+terminal errors, 1 interrupted).
+
+With these files the system-by-condition structure of every table in the paper
+can be inspected at the level of generated text. Human judgments remain
+aggregate-only (see below), so the human-evaluation cells of Tables 3–8 are
+verified from the released counts, not recomputed from item-level responses.
 
 ## Deliberately excluded
 
@@ -56,6 +63,6 @@ python3 analysis/verify_aggregates.py
 shasum -a 256 -c MANIFEST.sha256
 ```
 
-The exact templates/rendered prompts and full analysis scripts must be added
-from the separately preserved generation/analysis packet before claiming full
-generation or end-to-end result reproducibility.
+Generation is fully documented at the request level. End-to-end reproduction of
+the human-evaluation tables from item-level judgments is not possible from this
+release, by design.
