@@ -1,6 +1,29 @@
 # Research artifact: Evaluating Pragmatic Appropriateness in English–Vietnamese Machine Translation with Dyadic Profiles
 
 Zheng-Yu Huang and Richard Tzong-Han Tsai. WMT 2026.
+Paper: <https://aclanthology.org/2026.wmt-main.16/>
+
+## Citation
+
+```bibtex
+@inproceedings{huang-tsai-2026-evaluating,
+    title = "Evaluating Pragmatic Appropriateness in {E}nglish{--}{V}ietnamese Machine Translation with Dyadic Profiles",
+    author = "Huang, Zheng-Yu  and
+      Tsai, Richard Tzong-Han",
+    editor = "Haddow, Barry  and
+      Kocmi, Tom  and
+      Koehn, Philipp  and
+      Monz, Christof",
+    booktitle = "Proceedings of the Eleventh Conference on Machine Translation",
+    month = oct,
+    year = "2026",
+    address = "Budapest, Hungary",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.wmt-main.16/",
+    pages = "269--280",
+    ISBN = "979-8-89176-474-3"
+}
+```
 
 This item-level-response-free artifact accompanies the paper.
 
