@@ -4,6 +4,21 @@ Zheng-Yu Huang and Richard Tzong-Han Tsai. WMT 2026.
 
 This item-level-response-free artifact accompanies the paper.
 
+## Relation to the paper's Data Availability appendix
+
+Appendix A of the paper describes an earlier version of this release and states
+that the exact system/condition mapping and the verbatim prompt files are not
+included. This release now includes them:
+
+- `data/output_inventory.jsonl`: the system/condition label for each of the 210
+  generated records;
+- `generation/rendered_requests.jsonl` and `generation/prompt_templates.md`: the
+  verbatim provider requests and prompt templates;
+- `generation/attempt_log.csv`: the generation attempt archive.
+
+These files describe machine-generated outputs and prompts only. They contain no
+human judgments, so the human-data scope described in the paper is unchanged.
+
 ## Included
 
 - `data/source_requests.jsonl`: the 30 selected English workplace requests and
