@@ -1,4 +1,4 @@
-# Research artifact: Evaluating Pragmatic Appropriateness in English--Vietnamese Machine Translation with Dyadic Profiles
+# Research artifact: Evaluating Pragmatic Appropriateness in English–Vietnamese Machine Translation with Dyadic Profiles
 
 Zheng-Yu Huang and Richard Tzong-Han Tsai. WMT 2026.
 
@@ -24,7 +24,7 @@ human judgments, so the human-data scope described in the paper is unchanged.
 - `data/source_requests.jsonl`: the 30 selected English workplace requests and
   their intended synthetic relationship profiles.
 - `data/distinct_output_texts.jsonl`: 199 distinct
-  source--Vietnamese-translation--displayed-context combinations recovered
+  combinations of source text, Vietnamese translation, and displayed context, recovered
   from the executed forms. Together these contain the textual content observed
   across all 210 selected generated-output records.
 - `data/output_inventory.jsonl`: the labeled 210-row inventory (see below).
